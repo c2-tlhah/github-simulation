@@ -1,6 +1,6 @@
 #include"Repositories.h"
-#include"Graph.h"
-#include"Signin.h"
+#include"repoStats.h"
+#include"signIn.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -10,16 +10,61 @@
 
 using namespace std;
 
-repositorymanager::repositorymanager() : root(nullptr) {}
+void repoManager::deleteRepo(string name) {
+    root = deleteRepo(root, name);
+}
 
-repositoryNode* repositorymanager::createRepository(string owner, string name, bool isprivate) {
+repoNode* repoManager::deleteRepo(repoNode* node, string name) {
+    if (node == nullptr) {
+        return nullptr;
+    }
+    if (name < node->name) {
+        node->left = deleteRepo(node->left, name);
+    }
+    else if (name > node->name) {
+        node->right = deleteRepo(node->right, name);
+    }
+    else {
+        if (node->left == nullptr) {
+            repoNode* temp = node->right;
+            delete node;
+            return temp;
+        }
+        else if (node->right == nullptr) {
+            repoNode* temp = node->left;
+            delete node;
+            return temp;
+        }
+        repoNode* temp = minValueNode(node->right);
+        node->name = temp->name;
+        node->right = deleteRepo(node->right, temp->name);
+    }
+
+    // Update the repo.csv file after deletion
+    save_csv("repo.csv");
+
+    return node;
+}
+
+
+repoNode* repoManager::minValueNode(repoNode* node) {
+    repoNode* current = node;
+    while (current->left != nullptr) {
+        current = current->left;
+    }
+    return current;
+}
+
+repoManager::repoManager() : root(nullptr) {}
+
+repoNode* repoManager::createRepo(string owner, string name, bool isprivate) {
     root = insert(root, owner, name, isprivate);
     return root;
 }
 
-repositoryNode* repositorymanager::insert(repositoryNode* node, string owner, string name, bool isprivate) {
+repoNode* repoManager::insert(repoNode* node, string owner, string name, bool isprivate) {
     if (node == nullptr) {
-        return new repositoryNode(owner, name, isprivate);
+        return new repoNode(owner, name, isprivate);
     }
     else if (name.compare(node->name) < 0) {
         node->left = insert(node->left, owner, name, isprivate);
@@ -30,7 +75,7 @@ repositoryNode* repositorymanager::insert(repositoryNode* node, string owner, st
     return node;
 }
 
-repositoryNode* repositorymanager::search(repositoryNode* node, string name) {
+repoNode* repoManager::search(repoNode* node, string name) {
     if (node == nullptr || node->name == name) {
         return node;
     }
@@ -42,10 +87,10 @@ repositoryNode* repositorymanager::search(repositoryNode* node, string name) {
     }
 }
 
-void repositorymanager::forkRepo(string forkowner, string original_name) {
-    repositoryNode* originalrepo = search(root, original_name);
+void repoManager::forkRepo(string forkowner, string original_name) {
+    repoNode* originalrepo = search(root, original_name);
     if (originalrepo != nullptr) {
-        repositoryNode* forkedrepo = createRepository(forkowner, originalrepo->name + "_fork", originalrepo->isprivate);
+        repoNode* forkedrepo = createRepo(forkowner, originalrepo->name + "_fork", originalrepo->isprivate);
         copyFiles(originalrepo, forkedrepo);
         copyCommits(originalrepo, forkedrepo);
         originalrepo->forkCount++;
@@ -56,7 +101,7 @@ void repositorymanager::forkRepo(string forkowner, string original_name) {
     }
 }
 
-void repositorymanager::copyFiles(repositoryNode* originalnode, repositoryNode* newnode) {
+void repoManager::copyFiles(repoNode* originalnode, repoNode* newnode) {
     if (originalnode == nullptr || newnode == nullptr) {
         return;
     }
@@ -76,7 +121,7 @@ void repositorymanager::copyFiles(repositoryNode* originalnode, repositoryNode* 
     }
 }
 
-void repositorymanager::copyCommits(repositoryNode* originalnode, repositoryNode* newnode) {
+void repoManager::copyCommits(repoNode* originalnode, repoNode* newnode) {
     if (originalnode == nullptr || newnode == nullptr) {
         return;
     }
@@ -96,9 +141,9 @@ void repositorymanager::copyCommits(repositoryNode* originalnode, repositoryNode
     }
 }
 
-string repositorymanager::generateCommitID() {
+string repoManager::generateCommitID() {
     string id = "";
-    const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const string chars = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890";
     const int idLength = 10;
     for (int i = 0; i < idLength; ++i) {
         id += chars[rand() % chars.length()];
@@ -106,7 +151,7 @@ string repositorymanager::generateCommitID() {
     return id;
 }
 
-void repositorymanager::addCommit(repositoryNode* node, string commit_message) {
+void repoManager::addCommit(repoNode* node, string commit_message) {
     if (node == nullptr) {
         cout << "Repository not found." << endl;
         return;
@@ -118,8 +163,8 @@ void repositorymanager::addCommit(repositoryNode* node, string commit_message) {
     node->commithead = newcommit;
 }
 
-void repositorymanager::saveCommits(string repo_name) {
-    repositoryNode* node = search(root, repo_name);
+void repoManager::saveCommits(string repo_name) {
+    repoNode* node = search(root, repo_name);
     if (node == nullptr) {
         cerr << "Repository '" << repo_name << "' not found." << endl;
         return;
@@ -140,8 +185,8 @@ void repositorymanager::saveCommits(string repo_name) {
     cout << "Commits for repository '" << repo_name << "' saved to CSV successfully." << endl;
 }
 
-void repositorymanager::loadCommits(string repo_name) {
-    repositoryNode* node = search(root, repo_name);
+void repoManager::loadCommits(string repo_name) {
+    repoNode* node = search(root, repo_name);
     if (node == nullptr) {
         cerr << "Repository '" << repo_name << "' not found." << endl;
         return;
@@ -169,7 +214,7 @@ void repositorymanager::loadCommits(string repo_name) {
     cout << "Commits for repository '" << repo_name << "' loaded from CSV successfully." << endl;
 }
 
-void repositorymanager::addFile(repositoryNode* node, string filename) {
+void repoManager::addFile(repoNode* node, string filename) {
     if (node == nullptr) {
         cout << "Repository not found." << endl;
         return;
@@ -179,7 +224,7 @@ void repositorymanager::addFile(repositoryNode* node, string filename) {
     node->filehead = newfile;
 }
 
-void repositorymanager::deleteFile(repositoryNode* node, string filename) {
+void repoManager::deleteFile(repoNode* node, string filename) {
     if (node == nullptr) {
         cout << "Repository not found." << endl;
         return;
@@ -204,7 +249,7 @@ void repositorymanager::deleteFile(repositoryNode* node, string filename) {
     cout << "File '" << filename << "' deleted from the repository." << endl;
 }
 
-void repositorymanager::displayRepositoryStats(repositoryNode* node) {
+void repoManager::displayRepoStats(repoNode* node) {
     if (node == nullptr) {
         cout << "Repository not found." << endl;
         return;
@@ -229,12 +274,12 @@ void repositorymanager::displayRepositoryStats(repositoryNode* node) {
     cout << "Commit Count: " << commitCount << endl;
 }
 
-void repositorymanager::displayRepositoryStats(string repoName) {
-    repositoryNode* node = search(root, repoName);
-    displayRepositoryStats(node);
+void repoManager::displayRepoStats(string repoName) {
+    repoNode* node = search(root, repoName);
+    displayRepoStats(node);
 }
 
-void repositorymanager::load_csv(string filename) {
+void repoManager::load_csv(string filename) {
     ifstream file(filename);
     if (!file.is_open()) {
         cerr << "Error: Unable to open the file " << filename << endl;
@@ -247,7 +292,7 @@ void repositorymanager::load_csv(string filename) {
     file.close();
 }
 
-void repositorymanager::save_csv(string filename) {
+void repoManager::save_csv(string filename) {
     ofstream file(filename, ios::app);
     if (!file.is_open()) {
         cout << "Unable to open the file " << filename << endl;
@@ -259,7 +304,7 @@ void repositorymanager::save_csv(string filename) {
     cout << "Repositories saved to CSV successfully." << endl;
 }
 
-void repositorymanager::save_csv(repositoryNode* node, ofstream& file) {
+void repoManager::save_csv(repoNode* node, ofstream& file) {
     if (node == nullptr) {
         return;
     }
@@ -268,7 +313,7 @@ void repositorymanager::save_csv(repositoryNode* node, ofstream& file) {
     save_csv(node->right, file);
 }
 
-void repositorymanager::displayMenu() {
+void repoManager::displayMenu() {
     cout << "1. Create a repository" << endl;
     cout << "2. Delete a repository" << endl;
     cout << "3. Fork a repository" << endl;
@@ -281,8 +326,7 @@ void repositorymanager::displayMenu() {
     cout << "10. Exit" << endl;
     cout << "Enter your choice: ";
 }
-
-void repositorymanager::run() {
+void repoManager::runGithub() {
     User user;
     string username, password;
     int followers;
@@ -297,12 +341,11 @@ void repositorymanager::run() {
         cout << "\033[1;31mGitHub \033[0m";
 
         // Yellow color for "Simulation"
-        cout << "\033[1;33mSimulation\033[0m\n";
-        cout << "1. Press 1 for new registration" << endl;
-        cout << "2. Press 2 to sign in" << endl;
-        cout << "3. Press 3 to view a profile" << endl;
-        cout << "4. Press 4 to log out" << endl;
-        cout << "Enter the number of your choice: ";
+        cout << "\033[1;36m\n1. Press 1 for new registration.\033[0m" << endl;
+        cout << "\033[1;36m2. Press 2 to sign in.\033[0m" << endl;
+        cout << "\033[1;36m3. Press 3 to view a profile.\033[0m" << endl;
+        cout << "\033[1;36m4. Press 4 to exit.\033[0m" << endl;
+        cout << "\033[1;36mEnter the number of your choice: \033[0m";
         int choice;
         cin >> choice;
 
@@ -315,7 +358,7 @@ void repositorymanager::run() {
             cout << "Enter password: ";
             cin >> password;
 
-            user.userRegister(username, password);
+            user.registerUser(username, password);
             break;
         }
         case 2: {
@@ -352,7 +395,7 @@ void repositorymanager::run() {
                             cout << "Is the repository private? ";
                             cout << "\nEnter 1 for Yes and 0 for No: ";
                             cin >> isPrivate;
-                            createRepository(owner, name, isPrivate);
+                            createRepo(owner, name, isPrivate);
                             cout << "Repository created successfully." << endl;
                             cout << endl;
                             break;
@@ -360,7 +403,7 @@ void repositorymanager::run() {
                         case 2: {
                             cout << "Enter repository name to delete: ";
                             cin >> name;
-                            deleteRepository(name);
+                            deleteRepo(name);
                             cout << "Repository deleted successfully." << endl;
                             break;
                         }
@@ -411,7 +454,7 @@ void repositorymanager::run() {
                         case 9: {
                             cout << "Enter repository name: ";
                             cin >> repoName;
-                            displayRepositoryStats(repoName);
+                            displayRepoStats(repoName);
                             break;
                         }
                         case 10: {
@@ -428,7 +471,7 @@ void repositorymanager::run() {
                         cout << "Returning to login page..." << endl;
 
                         system("cls");
-                        run();
+                        runGithub();
                     }
                 }
 
@@ -436,7 +479,7 @@ void repositorymanager::run() {
                 {
 
                     cout << "--";
-                    Graph network;
+                    repoStats network;
                     network.loadFromFile("social_network.csv");
 
                     string command;
@@ -498,7 +541,7 @@ void repositorymanager::run() {
             break;
         }
         case 3: {
-            cout << "\t\tProfile         " << endl;
+            cout << "\t\t--Profile--         " << endl;
             cout << "Enter username: ";
             cin >> username;
             system("cls");
@@ -507,7 +550,7 @@ void repositorymanager::run() {
         }
         case 4: {
             system("cls");
-            cout << "Logged out successfully!" << endl;
+            cout << "Exited successfully!" << endl;
             logoutRequested = true;  // Set flag to indicate logout
             break;
         }
@@ -519,47 +562,3 @@ void repositorymanager::run() {
     }
 }
 
-void repositorymanager::deleteRepository(string name) {
-    root = deleteRepository(root, name);
-}
-
-repositoryNode* repositorymanager::deleteRepository(repositoryNode* node, string name) {
-    if (node == nullptr) {
-        return nullptr;
-    }
-    if (name < node->name) {
-        node->left = deleteRepository(node->left, name);
-    }
-    else if (name > node->name) {
-        node->right = deleteRepository(node->right, name);
-    }
-    else {
-        if (node->left == nullptr) {
-            repositoryNode* temp = node->right;
-            delete node;
-            return temp;
-        }
-        else if (node->right == nullptr) {
-            repositoryNode* temp = node->left;
-            delete node;
-            return temp;
-        }
-        repositoryNode* temp = minValueNode(node->right);
-        node->name = temp->name;
-        node->right = deleteRepository(node->right, temp->name);
-    }
-
-    // Update the repo.csv file after deletion
-    save_csv("repo.csv");
-
-    return node;
-}
-
-
-repositoryNode* repositorymanager::minValueNode(repositoryNode* node) {
-    repositoryNode* current = node;
-    while (current->left != nullptr) {
-        current = current->left;
-    }
-    return current;
-}

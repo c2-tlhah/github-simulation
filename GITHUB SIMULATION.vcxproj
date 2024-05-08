@@ -130,20 +130,20 @@
     <ClCompile Include="Commit.cpp" />
     <ClCompile Include="File.cpp" />
     <ClCompile Include="FollowerNode.cpp" />
-    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="repoStats.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Repositories.cpp" />
-    <ClCompile Include="Signin.cpp" />
-    <ClCompile Include="Vertex.cpp" />
+    <ClCompile Include="signIn.cpp" />
+    <ClCompile Include="connections_node.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Commit.h" />
     <ClInclude Include="File.h" />
     <ClInclude Include="FollowerNode.h" />
-    <ClInclude Include="Graph.h" />
+    <ClInclude Include="repoStats.h" />
     <ClInclude Include="Repositories.h" />
-    <ClInclude Include="Signin.h" />
-    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="signIn.h" />
+    <ClInclude Include="connections_node.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

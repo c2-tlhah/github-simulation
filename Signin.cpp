@@ -1,5 +1,5 @@
-#include "Signin.h"
-#include "Graph.h" // Assuming Graph class is defined in Graph.h
+#include "signIn.h"
+#include "repoStats.h" // Assuming repoStats class is defined in repoStats.h
 
 using namespace std;
 
@@ -31,7 +31,7 @@ int User::HashFunc(const string& name) {
     return name.length() % capacity;
 }
 
-void User::userRegister(const string& uname, const string& password) {
+void User::registerUser(const string& uname, const string& password) {
     ofstream fout;
     fout.open("UserINFO.csv", ios::app); // Change to CSV file
     if (!fout.is_open()) {
@@ -84,18 +84,10 @@ void User::viewProfile(const string& username) {
         }
     }
     file.close();
-    Graph network;
+    repoStats network;
     network.loadFromFile("social_network.csv");
     cout << "Profile of user: " << username << endl;
     cout << "Total number of repositories: " << totalRepositories << endl;
 
     network.displayFollowers(username);
-}
-
-void User::delayProgram(int time) {
-    using namespace this_thread; // sleep_for, sleep_until
-    using namespace chrono; // nanoseconds, system_clock, seconds
-
-    sleep_for(nanoseconds(0));
-    sleep_until(system_clock::now() + seconds(time));
 }

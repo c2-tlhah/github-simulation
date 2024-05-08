@@ -7,13 +7,13 @@
 #include <chrono>
 #include <thread>
 using namespace std;
-struct SIGNIN {
+struct signIn {
     string username;
     string password;
 };
 
 struct Node {
-    SIGNIN signin;
+    signIn signin;
     Node* next;
 
     Node() {
@@ -30,8 +30,7 @@ public:
     ~User();
     int hashfunc(int& id);
     int HashFunc(const string& name);
-    void userRegister(const string& uname, const string& password);
+    void registerUser(const string& uname, const string& password);
     bool Login(const string& uname, const string& password);
     void viewProfile(const string& username);
-    void delayProgram(int time);
 };

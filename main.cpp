@@ -1,6 +1,6 @@
 #include"Repositories.h"
 int main() {
-    repositorymanager manager;
-    manager.run();
+    repoManager manager;
+    manager.runGithub();
     return 0;
 }

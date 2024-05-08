@@ -21,46 +21,46 @@ struct commit {
     commit(string i, string m, time_t t) : id(i), message(m), timestamp(t), next(nullptr) {}
 };
 
-struct repositoryNode {
+struct repoNode {
     string owner;
     string name;
     bool isprivate;
     int forkCount;
     file* filehead;
     commit* commithead;
-    repositoryNode* left;
-    repositoryNode* right;
-    repositoryNode(string o, string n, bool p) : owner(o), name(n), isprivate(p), forkCount(0), filehead(nullptr), commithead(nullptr), left(nullptr), right(nullptr) {}
+    repoNode* left;
+    repoNode* right;
+    repoNode(string o, string n, bool p) : owner(o), name(n), isprivate(p), forkCount(0), filehead(nullptr), commithead(nullptr), left(nullptr), right(nullptr) {}
 };
 
-class repositorymanager {
+class repoManager {
 private:
-    repositoryNode* root;
-    repositoryNode* insert(repositoryNode* node, string owner, string name, bool isprivate);
-    repositoryNode* search(repositoryNode* node, string name);
+    repoNode* root;
+    repoNode* insert(repoNode* node, string owner, string name, bool isprivate);
+    repoNode* search(repoNode* node, string name);
     string generateCommitID();
-    void copyFiles(repositoryNode* originalnode, repositoryNode* newnode);
-    void copyCommits(repositoryNode* originalnode, repositoryNode* newnode);
-    void save_csv(repositoryNode* node, ofstream& file);
+    void copyFiles(repoNode* originalnode, repoNode* newnode);
+    void copyCommits(repoNode* originalnode, repoNode* newnode);
+    void save_csv(repoNode* node, ofstream& file);
 public:
-    repositorymanager();
-    repositoryNode* createRepository(string owner, string name, bool isprivate);
+    repoManager();
+    repoNode* createRepo(string owner, string name, bool isprivate);
     void forkRepo(string forkOwner, string originalName);
-    void addCommit(repositoryNode* node, string commit_message);
+    void addCommit(repoNode* node, string commit_message);
     void saveCommits(string repo_name);
     void loadCommits(string repo_name);
-    void addFile(repositoryNode* node, string filename);
-    void deleteFile(repositoryNode* node, string filename);
-    void displayRepositoryStats(repositoryNode* node);
-    void displayRepositoryStats(string repoName);
+    void addFile(repoNode* node, string filename);
+    void deleteFile(repoNode* node, string filename);
+    void displayRepoStats(repoNode* node);
+    void displayRepoStats(string repoName);
     void load_csv(string filename);
     void save_csv(string filename);
-    void deleteRepository(string name);
+    void deleteRepo(string name);
     void displayMenu();
-    repositoryNode* deleteRepository(repositoryNode* node, string name);
-    repositoryNode* minValueNode(repositoryNode* node);
+    repoNode* deleteRepo(repoNode* node, string name);
+    repoNode* minValueNode(repoNode* node);
 
-    void run();
+    void runGithub();
 };
 
 #endif // REPOSITORYMANAGER_H

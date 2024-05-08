@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:File.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Repositories.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Repositories.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Signin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Signin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Vertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Vertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Vertex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Vertex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Signin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Signin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Repositories.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Repositories.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Graph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Graph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:File.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Graph.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Graph.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\connections_node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:connections_node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\FollowerNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -47,16 +31,32 @@
       "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:FollowerNode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:File.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\connections_node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:connections_node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:File.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Commit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Commit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\repoStats.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:repoStats.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\repoStats.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:repoStats.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Signin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Signin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Signin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|solutionrelative:Signin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3012E47-1AD8-40DD-992E-6CD36037945B}|GITHUB SIMULATION.vcxproj|C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Commit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -70,21 +70,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Repositories.cpp",
-              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Repositories.cpp",
-              "RelativeDocumentMoniker": "Repositories.cpp",
-              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Repositories.cpp",
-              "RelativeToolTip": "Repositories.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-05T13:32:59.655Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -92,114 +79,142 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Vertex.h",
-              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Vertex.h",
-              "RelativeDocumentMoniker": "Vertex.h",
-              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Vertex.h",
-              "RelativeToolTip": "Vertex.h",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAIwBIAAAAAAAAA",
+              "Title": "File.cpp",
+              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.cpp",
+              "RelativeDocumentMoniker": "File.cpp",
+              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.cpp",
+              "RelativeToolTip": "File.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-05T13:29:40.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "connections_node.cpp",
+              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\connections_node.cpp",
+              "RelativeDocumentMoniker": "connections_node.cpp",
+              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\connections_node.cpp",
+              "RelativeToolTip": "connections_node.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-05T13:37:51.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Repositories.cpp",
+              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Repositories.cpp",
+              "RelativeDocumentMoniker": "Repositories.cpp",
+              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Repositories.cpp",
+              "RelativeToolTip": "Repositories.cpp",
+              "ViewState": "AQIAAOMBAAAAAAAAAAAUwO8BAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-05T13:32:59.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "connections_node.h",
+              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\connections_node.h",
+              "RelativeDocumentMoniker": "connections_node.h",
+              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\connections_node.h",
+              "RelativeToolTip": "connections_node.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-05T13:38:10.425Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Vertex.cpp",
-              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Vertex.cpp",
-              "RelativeDocumentMoniker": "Vertex.cpp",
-              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Vertex.cpp",
-              "RelativeToolTip": "Vertex.cpp",
-              "ViewState": "AQIAACAAAAAAAAAAAAAIwCoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-05T13:37:51.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Signin.h",
-              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Signin.h",
-              "RelativeDocumentMoniker": "Signin.h",
-              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Signin.h",
-              "RelativeToolTip": "Signin.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "DocumentIndex": 13,
+              "Title": "signIn.h",
+              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\signIn.h",
+              "RelativeDocumentMoniker": "signIn.h",
+              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\signIn.h",
+              "RelativeToolTip": "signIn.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-05T13:37:26.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Signin.cpp",
-              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Signin.cpp",
-              "RelativeDocumentMoniker": "Signin.cpp",
-              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Signin.cpp",
-              "RelativeToolTip": "Signin.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
+              "DocumentIndex": 12,
+              "Title": "signIn.cpp",
+              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\signIn.cpp",
+              "RelativeDocumentMoniker": "signIn.cpp",
+              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\signIn.cpp",
+              "RelativeToolTip": "signIn.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-05T13:37:05.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Repositories.h",
               "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Repositories.h",
               "RelativeDocumentMoniker": "Repositories.h",
               "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Repositories.h",
               "RelativeToolTip": "Repositories.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAAkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-05T13:34:46.438Z"
+              "WhenOpened": "2024-05-05T13:34:46.438Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-05T13:32:35.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Graph.h",
-              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Graph.h",
-              "RelativeDocumentMoniker": "Graph.h",
-              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Graph.h",
-              "RelativeToolTip": "Graph.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "DocumentIndex": 11,
+              "Title": "repoStats.h",
+              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\repoStats.h",
+              "RelativeDocumentMoniker": "repoStats.h",
+              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\repoStats.h",
+              "RelativeToolTip": "repoStats.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-05T13:31:45.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Graph.cpp",
-              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Graph.cpp",
-              "RelativeDocumentMoniker": "Graph.cpp",
-              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Graph.cpp",
-              "RelativeToolTip": "Graph.cpp",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAuwHIAAAAAAAAA",
+              "DocumentIndex": 10,
+              "Title": "repoStats.cpp",
+              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\repoStats.cpp",
+              "RelativeDocumentMoniker": "repoStats.cpp",
+              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\repoStats.cpp",
+              "RelativeToolTip": "repoStats.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-05T13:31:32.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "FollowerNode.h",
               "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\FollowerNode.h",
               "RelativeDocumentMoniker": "FollowerNode.h",
               "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\FollowerNode.h",
               "RelativeToolTip": "FollowerNode.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-05T13:30:41.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "FollowerNode.cpp",
               "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\FollowerNode.cpp",
               "RelativeDocumentMoniker": "FollowerNode.cpp",
@@ -211,27 +226,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "File.cpp",
-              "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.cpp",
-              "RelativeDocumentMoniker": "File.cpp",
-              "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.cpp",
-              "RelativeToolTip": "File.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-05T13:29:40.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "File.h",
               "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.h",
               "RelativeDocumentMoniker": "File.h",
               "ToolTip": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\File.h",
               "RelativeToolTip": "File.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-05T13:29:28.174Z"
+              "WhenOpened": "2024-05-05T13:29:28.174Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -247,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "Commit.cpp",
               "DocumentMoniker": "C:\\Users\\c2tlh\\source\\repos\\GITHUB SIMULATION\\Commit.cpp",
               "RelativeDocumentMoniker": "Commit.cpp",

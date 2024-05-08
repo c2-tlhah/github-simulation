@@ -24,7 +24,7 @@
     <ClCompile Include="FollowerNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Graph.cpp">
+    <ClCompile Include="repoStats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
@@ -33,10 +33,10 @@
     <ClCompile Include="Repositories.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Signin.cpp">
+    <ClCompile Include="signIn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vertex.cpp">
+    <ClCompile Include="connections_node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -50,16 +50,16 @@
     <ClInclude Include="FollowerNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Graph.h">
+    <ClInclude Include="repoStats.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Repositories.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Signin.h">
+    <ClInclude Include="signIn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Vertex.h">
+    <ClInclude Include="connections_node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
